@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Marketing Website</title>
+     <!-- Link to the CSS file -->
+     <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="Vehicles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <section id="main-content">
+    <nav>
+        <ul>
+            
+           
+            
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#searchSection">Search vehicle</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-section">
+        <div class="container">
+            <a href="index.html" class="cta-button">Go Back to first webpage</a>
+        </div>
+
+   
+
+   
+
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Email: <a href="mailto:info@vehiclemarketing.com" style="color: #007bff; text-decoration: none;">info@vehiclemarketing.com</a></b></p>
+        <p>You can chat with us directly on WhatsApp:</p>
+        <a href="https://wa.me/+254745821009?text=Hello,%20thank%20you%20for%20contacting%20our%20vehicle%20sales%20and%20marketing%20website%20socials%,%20how%20may%20we%20help%20you?" target="_blank">
+            <button style="padding: 10px 20px; background-color: #25D366; color: white; border-radius: 5px; text-decoration: none;">
+                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>
+                Click to Chat with us on WhatsApp
+            </button>
+        </a>
+    </div>
+</section>
+
+<h1>Available Vehicles</h1>
+<div class="vehicle-gallery">
+    <!-- Vehicle cards will be dynamically inserted here -->
+</div>
+<!-- JavaScript File -->
+<script src="script.js"></script>
+
+<section id="searchSection">
+    <div class="search-container">
+        <form id="searchForm">
+            <label for="vehicleType">Enter Vehicle Type:</label>
+            <input type="text" id="vehicleType" name="vehicleType" placeholder="e.g., SUV, Sedan">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <div class="price-filter">
+        <label for="minPriceRange">Enter Minimum Price Estimate:</label>
+        <input type="number" id="minPriceRange" placeholder="e.g., 20000">
+        
+        <label for="maxPriceRange">Enter Maximum Price Estimate:</label>
+        <input type="number" id="maxPriceRange" placeholder="e.g., 50000">
+        
+        <button onclick="filter_by_price()">Find Vehicles</button>
+    </div>
+</section>
+
+<div id="priceResults"></div>
+
+<script src="script.js?v=2.0"></script>
+
+</body>
+</html>
